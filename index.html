@@ -11,9 +11,9 @@
         media="screen"
         charset="utf-8">
   </head>
-  <body>
+  <body class="page-body">
     <div class="header">
-      <img src="./eisenhower-matrix.jpg">
+      <img id="header__img" src="./eisenhower-matrix.jpg">
       <a
           class="header__link"
           href="https://goal-life.com/page/method/matrix-eisenhower">
@@ -22,44 +22,44 @@
     </div>
     <div class="main-body">
       <p id="main-body__add">
-        <label for="main-body__task-id">Add Item</label>
+        <label for="main-body__task-id" class="main-body__task-label">Add Item</label>
         <div class="main-body__task-wrp">
           <input id="main-body__task-id" class="main-body__task" type="text">
-          <button>Add</button>
+          <button class="main-body__add-btn btn">Add</button>
         </div>
       </p>
-      <h3>Todo</h3>
-      <ul id="main-body__todo">
-        <li>
+      <h3 class="main-body__section">Todo</h3>
+      <ul id="main-body__todo" class="main-body__list">
+        <li id="main-body__list-el">
           <input type="checkbox">
-          <label class="main-body__task">Pay Bills</label>
+          <label class="main-body__task lbl">Pay Bills</label>
           <input type="text" class="main-body__task">
-          <button class="main-body__edit-btn">Edit</button>
-          <button class="main-body__delete-btn">
-            <img src="./remove.svg">
+          <button class="main-body__edit-btn btn">Edit</button>
+          <button class="main-body__delete-btn btn">
+            <img src="./remove.svg" class="btn-img">
           </button>
         </li>
-        <li class="main-body__todo__edit">
+        <li class="main-body__todo__edit" id="main-body__list-el">
           <input type="checkbox">
-          <label class="main-body__task">Go Shopping</label>
+          <label class="main-body__task lbl" id="todo-lbl">Go Shopping</label>
           <input type="text"
                  value="Go Shopping"
                  class="main-body__task">
-          <button class="main-body__edit-btn">Save</button>
-          <button class="main-body__delete-btn">
-            <img src="./remove.svg">
+          <button class="main-body__edit-btn btn">Save</button>
+          <button class="main-body__delete-btn btn">
+            <img src="./remove.svg" class="btn-img">
           </button>
         </li>
       </ul>
-      <h3>Completed</h3>
-      <ul id="main-body__completed">
-        <li>
+      <h3 class="main-body__section">Completed</h3>
+      <ul id="main-body__completed" class="main-body__list">
+        <li id="main-body__list-el">
           <input type="checkbox" checked>
-          <label class="main-body__task">See the Doctor</label>
+          <label class="main-body__task lbl" id="completed-lbl">See the Doctor</label>
           <input type="text" class="main-body__task">
-          <button class="main-body__edit-btn">Edit</button>
-          <button class="main-body__delete-btn">
-            <img src="./remove.svg">
+          <button class="main-body__edit-btn btn">Edit</button>
+          <button class="main-body__delete-btn btn">
+            <img src="./remove.svg" class="btn-img">
           </button>
         </li>
       </ul>
