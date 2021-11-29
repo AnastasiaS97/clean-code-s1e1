@@ -21,7 +21,7 @@
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
   .header { 
     text-align: center;
@@ -46,16 +46,16 @@
 }
 
 #main-body__todo, #main-body__completed {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .main-body__todo, .main-body__section {
-  list-style:none;
+  list-style: none;
 }
 
 .main-body__task,.btn{
-  outline:none;
+  outline: none;
 }
 
 .btn {
@@ -161,14 +161,14 @@
 /* Edit Task */
 
 .main-body__task[type="text"] {
-  display:none
+  display: none
 }
 
 .main-body__todo__edit > [type="text"] {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 #todo-lbl {
-  display:none;
+  display: none;
 }
