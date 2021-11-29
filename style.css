@@ -1,50 +1,63 @@
 /* Basic Style */
+
 .page-body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 #header__img {
   width: 100%;
 }
+
 .header .header__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
+
   .header { 
     text-align: center;
   }
+
 }
+
 .main-body {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .main-body__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .main-body__task-wrp {
   display: flex;
 }
+
 #main-body__todo, #main-body__completed {
   margin:0;
   padding: 0px;
 }
+
 .main-body__todo, .main-body__section {
   list-style:none;
 }
+
 .main-body__task,.btn{
   outline:none;
 }
+
 .btn {
   background: none;
   border: 0px;
@@ -54,9 +67,11 @@
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .btn:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 .main-body__section,.main-body__task-label {
   color: #333;
@@ -67,6 +82,7 @@
   margin: 0;
   text-transform: uppercase;
 }
+
 .main-body__task[type="text"] {
   margin: 0;
   font-size: 18px;
@@ -79,20 +95,24 @@
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .main-body__task[type="text"]:focus {
   color: #333;
 }
 
 /* New Task */
+
 .main-body__task-label[for="main-body__task-id"] {
   display: block;
   margin: 0 0 20px;
 }
+
 #main-body__task-id {
   width: 318px;
 }
 
 /* Task list */
+
 #main-body__list-el {
   overflow: hidden;
   padding: 20px 0;
@@ -101,6 +121,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .main-body__list > * {
   vertical-align: middle;
 }
@@ -108,31 +129,37 @@
 #main-body__list-el > [type="checkbox"] {
   margin: 0 10px;
 }
+
 #main-body__list-el > .lbl {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 #main-body__list-el >    [type="text"] {
   width: 226px
 }
+
 .main-body__delete-btn .btn-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .main-body__delete-btn .btn-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
+
 #completed-lbl {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
+
 .main-body__task[type="text"] {
   display:none
 }
